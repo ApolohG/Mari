@@ -1,0 +1,80 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: aliceblue;
+  }
+  
+  *,
+  *::after, *::before{
+    box-sizing: inherit;
+  }
+
+  h1{
+    text-align: center;
+  }
+  
+p{
+    font-weight: bold;
+}
+
+  .contact-form{
+    --form-text-color: #666;
+    --form-success-color: #4caf50;
+    --form-error-color: #f44336;
+    --form-bg-color: #eee;
+    --form-border-color: #222;
+    --form-placeholder-color: #006999;
+    
+  
+    background-color: var(--form-bg-color);
+    border: thin solid var(--form-border-color);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    width: 80%;
+  }
+  
+  .contact-form > *{
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: var(--form-text-color);
+    caret-color: var(--form-placeholder-color); /*Para cambiar el color del cursor de la web page*/
+  }
+  
+  .contact-form > *::placeholder{
+    color: var(--form-placeholder-color);
+  }
+  
+  .contact-form > *[required]:invalid{
+    border: thin solid var(--form-error-color);
+  }
+  .contact-form > *[required]:valid{
+    border: thin solid var(--form-success-color);
+  }
+  
+  .contact-form input[type="submit"], a{
+    margin-bottom: 0;
+    font-size: 1.25;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: var(--form-placeholder-color);
+    color: #fff;
+    font-weight: bold;
+    
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 75%;
+  }
+  
+  .contact-form textarea{
+    resize: none;
+  }
+  

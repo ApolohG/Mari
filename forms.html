@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios en CSS</title>
+    <link rel="stylesheet" href="src/forms.css" />
+  </head>
+  <body>
+    <h1>Investigación: ¿Qué tanto dulce consumes?</h1>
+    <form class="contact-form" action="index.html" method="post">
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Escribe tu nombre."
+        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Nombre sólo acepta letras y espacios en blanco"
+        required
+      />
+      <!--Es para que coincida con el pattern. ya sabes.-->
+      <input
+        type="email"
+        name="correo"
+        placeholder="Escribe tu correo."
+        pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+        required
+        title="Formato de correo inválido"
+      />
+
+      <input
+        type="number"
+        name="numero"
+        placeholder="Escribe tu número de celular"
+        required
+        title="Formato de correo inválido"
+      />
+
+      <p>Me identifico como:</p>
+
+      <select name="genero" required>
+        <!--Es para abrir un cuadro de tipo select con la variable "idioma"-->
+        <option value="">Elige una opción</option>
+        <option value="es">Mujer</option>
+        <option value="en">Hombre</option>
+        <!--Atributo "selected" es para dejar una de las options como la opción por defecto.-->
+        <option value="fr">Prefiero no decirlo</option>
+      </select>
+
+      <p>
+        Responda las siguientes preguntas 5 con base en su experiencia
+        consumiendo dulce.
+      </p>
+
+      <p>1. Al día, ¿cuántas veces consume dulce? (de cualquier tipo)</p>
+
+      <select name="1." required>
+        <!--Es para abrir un cuadro de tipo select con la variable "idioma"-->
+        <option value="">Elige una opción</option>
+        <option value="es">De 1 a 2</option>
+        <option value="en">De 3 a 4</option>
+        <!--Atributo "selected" es para dejar una de las options como la opción por defecto.-->
+        <option value="fr">De 5 a 6</option>
+        <option value="es">Más de 6</option>
+      </select>
+
+      <p>2. Cuando consume dulce, lo hace:</p>
+
+      <select name="2." required>
+        <!--Es para abrir un cuadro de tipo select con la variable "idioma"-->
+        <option value="">Elige una opción</option>
+        <option value="es">Al despertar</option>
+        <option value="en">Al desayunar</option>
+        <option value="fr">Al almorzar</option>
+        <option value="es">Al comer</option>
+        <option value="er">Antes de ir a dormir</option>
+        <option value="es">Me es indiferente</option>
+      </select>
+      
+      <p>3. A la semana, ¿Cuántas veces consume dulce? (De cualquier tipo)</p>
+
+      <select name="3." required>
+        <!--Es para abrir un cuadro de tipo select con la variable "idioma"-->
+        <option value="">Elige una opción</option>
+        <option value="es">De 1 a 3</option>
+        <option value="en">De 4 a 6</option>
+        <option value="fr">De 7 a 9</option>
+        <option value="es">Más de 10 veces.</option>
+      </select>
+
+      <p>4. De acuerdo a su consumo semanal de dulce, considera que usted consume:</p>
+
+      <select name="4." required>
+        <!--Es para abrir un cuadro de tipo select con la variable "idioma"-->
+        <option value="">Elige una opción</option>
+        <option value="es">Poco dulce</option>
+        <option value="en">De forma moderada el dulce</option>
+        <option value="fr">Altas cantidades de dulce</option>
+        <option value="es">Estoy al borde de la diabetes.</option>
+      </select>
+
+      <p>5. Cuando ha consumido dulces, ¿se ha sentido con dolores de estomago, nauseas o algún otro sintoma?</p>
+
+      <select name="4." required>
+        <!--Es para abrir un cuadro de tipo select con la variable "idioma"-->
+        <option value="">Elige una opción</option>
+        <option value="es">Poco dulce</option>
+        <option value="en">De forma moderada el dulce</option>
+        <option value="fr">Altas cantidades de dulce</option>
+        <option value="es">Estoy al borde de la diabetes.</option>
+      </select>
+      
+      <p>Si lo desea, puede añadir un comentario al final para describir más de su experiencia consumiendo dulces.</p>
+
+
+      <textarea
+        name="comentarios"
+        placeholder="Escribe tus comentarios. "
+        cols="30"
+        rows="10"
+      ></textarea>
+      <input type="submit" />
+    </form>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
